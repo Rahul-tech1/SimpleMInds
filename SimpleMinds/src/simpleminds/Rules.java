@@ -8,7 +8,9 @@ import java.awt.event.*;
 public class Rules extends JFrame implements ActionListener{
 	
 	JButton b1, b2;
+	String username;
 Rules(String username){
+	this.username = username;
 	
 	setBounds(600, 200, 800, 650);
 	getContentPane().setBackground(Color.WHITE);
@@ -75,7 +77,36 @@ new SimpleMinds().setVisible(true);
 } 
 
 else if(e.getSource()==b2) {
-	System.exit(0);
+	this.setVisible(false);
+	new Quiz(username).setVisible(true);
 }
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

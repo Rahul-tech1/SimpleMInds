@@ -210,7 +210,7 @@ public class Quiz extends JFrame implements ActionListener{
                 }
             }
             this.setVisible(false);
-            //new Score(username, score).setVisible(true);
+            new Score(username, score).setVisible(true);
         }else if(ae.getSource() == lifeline){
             if(count == 2 || count == 4 || count == 6 || count == 8 || count == 9){
                 opt2.setEnabled(false);
@@ -273,7 +273,7 @@ public class Quiz extends JFrame implements ActionListener{
                     }
                 }
                 this.setVisible(false);
-                //new Score(username, score).setVisible(true);
+                new Score(username, score).setVisible(true);
             }else{
                 if(options.getSelection() == null){
                     pa[count][0] = "";
